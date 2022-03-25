@@ -1,0 +1,15 @@
+.library{
+display: grid;
+grid-template-columns: 3fr 1fr;
+grid-gap: 30px;
+}
+.book-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 45px;
+    padding: 20px;
+}
+.cart-container{
+    
+    
+}
