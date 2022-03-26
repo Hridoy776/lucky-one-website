@@ -23,13 +23,9 @@
     color: #a60f55;
 }
 .header h3{
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 400;
     color: #a60f55;
+    white-space: nowrap;
     
-}
-@media screen and (max-width:787px) {
-    .header h3{
-        margin-left: 40px;
-    }
 }
