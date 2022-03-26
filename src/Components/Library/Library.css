@@ -10,6 +10,20 @@ grid-gap: 30px;
     padding: 20px;
 }
 .cart-container{
+    border: 3px solid aliceblue;
+    display: flex;
+    flex-direction: column;
     
-    
+    align-items: center;
+}
+.cart-container button{
+    width: 50%;
+    padding: 10px;
+    color: azure;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+.cart-container button:hover{
+    color: burlywood;
+    background-color: azure;
 }
