@@ -1,29 +1,32 @@
-.library{
-display: grid;
-grid-template-columns: 3fr 1fr;
-grid-gap: 30px;
+.library {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 30px;
 }
-.book-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 45px;
-    padding: 20px;
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 45px;
+  padding: 20px;
 }
-.cart-container{
-    border: 3px solid aliceblue;
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
+.cart-container {
+  border: 3px solid aliceblue;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+
+  align-items: center;
 }
-.cart-container button{
-    width: 50%;
-    padding: 10px;
-    color: azure;
-    background-color: burlywood;
-    border-radius: 10px;
+.cart-container button {
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: azure;
+  background-color: burlywood;
+  border-radius: 10px;
+  font-size: 1.2em;
 }
-.cart-container button:hover{
-    color: burlywood;
-    background-color: azure;
+.cart-container button:hover {
+  color: burlywood;
+  background-color: azure;
 }

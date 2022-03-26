@@ -1,13 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 .container{
     max-width: 95%;
-background-color: aquamarine;
+    
+
 }
 .header{
-    margin: 50px auto;
+    
+    padding: 15px;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     align-items: center;

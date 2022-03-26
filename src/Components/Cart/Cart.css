@@ -1,17 +1,12 @@
-.cart{
-    
-    
-   
-}
-.cart-details{
-display: flex;
-justify-content: center;
-align-items: center;
 
+.cart-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.cart-details img{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin: 15px;
+.cart-details img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 15px;
 }

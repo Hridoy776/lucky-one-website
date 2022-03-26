@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+}
+.answer{
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid burlywood;
+    border-radius: 10px;
+}
