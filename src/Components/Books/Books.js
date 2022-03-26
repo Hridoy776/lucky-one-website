@@ -9,7 +9,7 @@ const Books = (props) => {
         <div className='book'>
             <img src={img} alt="" />
             <p className='name'>{name}</p>
-            <p className='price'>price: {price}</p>
+            <p className='price'>price: ${price}</p>
             <button onClick={()=>addToCart(book)}>
                 <p className='btn-txt'>add to cart <FontAwesomeIcon icon={faShoppingCart} /></p>
             </button>
