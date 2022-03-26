@@ -34,6 +34,7 @@ const Library = () => {
         ))}
       </div>
       <div className="cart-container">
+        <div className="child-cart">
         <h3>selected book</h3>
         {cart.map((selectedCart) => (
           <Cart selectedCart={selectedCart} key={selectedCart.id}></Cart>
@@ -41,6 +42,7 @@ const Library = () => {
 
         <button onClick={() => randomCart(cart)}>choose 1 for me</button>
         <button onClick={chooseAgain}>choose again</button>
+        </div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@
     
 }
 .container{
-    max-width: 95%;
+    max-width: 92%;
     
 
 }
@@ -16,4 +16,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.header h1{
+    font-size: 2em;
+    font-weight: 500;
+    color: #a60f55;
+}
+.header h3{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #a60f55;
+    
+}
+@media screen and (max-width:787px) {
+    .header h3{
+        margin-left: 40px;
+    }
 }

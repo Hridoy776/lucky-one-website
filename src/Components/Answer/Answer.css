@@ -7,6 +7,22 @@
     width: 400px;
     margin: 20px;
     padding: 20px;
-    border: 2px solid burlywood;
+    border: 2px solid #a60f55;
     border-radius: 10px;
+}
+.answer h1{
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #a60f55;
+}
+@media screen and (max-width:787px) {
+    .container{
+        flex-direction: column;
+        margin-right: 30px;
+    }
+    .answer{
+        width: 300px;
+        
+    }
 }
