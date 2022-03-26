@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Books from "../Books/Books";
 import Cart from "../Cart/Cart";
-import ChoosenItem from "../Choosen item/ChoosenItem";
+
 import "./Library.css";
 const Library = () => {
   const [books, setBooks] = useState([]);
   const [cart, setCart] = useState([]);
-  const [item,setItem]= useState([])
-  
-  
+
   useEffect(() => {
     fetch("fakedb.json")
       .then((res) => res.json())
@@ -22,9 +20,12 @@ const Library = () => {
     const randomCarts = [...cart];
     const selectedBook =
       randomCarts[Math.floor(Math.random() * randomCarts.length)];
-      setItem(selectedBook)
-      
+    const Book = [selectedBook];
+    setCart(Book);
   }
+  const chooseAgain = () => {
+    setCart([]);
+  };
   return (
     <div className="library">
       <div className="book-container">
@@ -34,12 +35,12 @@ const Library = () => {
       </div>
       <div className="cart-container">
         <h3>selected book</h3>
-        {
-        cart.map(selectedCart => <Cart selectedCart={selectedCart} key={selectedCart.id} ></Cart>
-        )}
-        
-        <button onClick={()=>randomCart(cart)}>choose 1 for me</button>
-        <ChoosenItem selectedItem={item}></ChoosenItem>
+        {cart.map((selectedCart) => (
+          <Cart selectedCart={selectedCart} key={selectedCart.id}></Cart>
+        ))}
+
+        <button onClick={() => randomCart(cart)}>choose 1 for me</button>
+        <button onClick={chooseAgain}>choose again</button>
       </div>
     </div>
   );
